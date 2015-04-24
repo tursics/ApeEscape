@@ -36,7 +36,7 @@ MyPlayer = new function()
 			});
 		});
 
-		hueVoid();
+//		hueVoid();
 
 		// will be done in this.startNewGame()
 //		$( '#stepCount').html( _( 'appName'));
@@ -394,11 +394,11 @@ MyPlayer = new function()
 
 		if( 0 == number) {
 			$( '#crumb' + this.currentCrumb_).attr( 'src', (CConfig.os.firefox == CConfig.platform ? 'artFxOS/' : 'art/') + 'crumb' + crumb.toUpperCase() + 'Bahn.png');
-			if( crumb.toUpperCase() == 'S') {
-				hueS();
-			} else {
-				hueU();
-			}
+//			if( crumb.toUpperCase() == 'S') {
+//				hueS();
+//			} else {
+//				hueU();
+//			}
 		}
 
 		if( this.enableApe_ || (number > 0)) {
@@ -449,7 +449,7 @@ MyPlayer = new function()
 	{
 		MyPlayer.currentCrumb_ = 0;
 		MyPlayer.showBreadcrumb();
-		hueVoid();
+//		hueVoid();
 	}
 
 	//------------------------
@@ -814,56 +814,56 @@ MyPlayer = new function()
 	//------------------------
 };
 
-function hueVoid()
-{
-	var state = {
-		on: true,
-		bri: 255,
-		hue: 32768,
-		sat: 255,
-		transitiontime: 15
-	};
-	CHue.setLight( 0, state, function() {
-		CHue.setLight( 1, state, function() {
-			CHue.setLight( 2, state, function() {
-			});
-		});
-	});
-}
-
-function hueS()
-{
-	var state = {
-		on: true,
-		bri: parseInt( 255 * 0.25),
-		hue: parseInt( 65535 * 145/360),
-		sat: parseInt( 255 * 1),
-		transitiontime: 15
-	};
-	CHue.setLight( 0, state, function() {
-		CHue.setLight( 1, state, function() {
-			CHue.setLight( 2, state, function() {
-			});
-		});
-	});
-}
-
-function hueU()
-{
-	var state = {
-		on: true,
-		bri: parseInt( 255 * 0.30),
-		hue: parseInt( 65535 * 250/360),
-		sat: parseInt( 255 * 1),
-		transitiontime: 15
-	};
-	CHue.setLight( 0, state, function() {
-		CHue.setLight( 1, state, function() {
-			CHue.setLight( 2, state, function() {
-			});
-		});
-	});
-}
+//function hueVoid()
+//{
+//	var state = {
+//		on: true,
+//		bri: 255,
+//		hue: 32768,
+//		sat: 255,
+//		transitiontime: 15
+//	};
+//	CHue.setLight( 0, state, function() {
+//		CHue.setLight( 1, state, function() {
+//			CHue.setLight( 2, state, function() {
+//			});
+//		});
+//	});
+//}
+//
+//function hueS()
+//{
+//	var state = {
+//		on: true,
+//		bri: parseInt( 255 * 0.25),
+//		hue: parseInt( 65535 * 145/360),
+//		sat: parseInt( 255 * 1),
+//		transitiontime: 15
+//	};
+//	CHue.setLight( 0, state, function() {
+//		CHue.setLight( 1, state, function() {
+//			CHue.setLight( 2, state, function() {
+//			});
+//		});
+//	});
+//}
+//
+//function hueU()
+//{
+//	var state = {
+//		on: true,
+//		bri: parseInt( 255 * 0.30),
+//		hue: parseInt( 65535 * 250/360),
+//		sat: parseInt( 255 * 1),
+//		transitiontime: 15
+//	};
+//	CHue.setLight( 0, state, function() {
+//		CHue.setLight( 1, state, function() {
+//			CHue.setLight( 2, state, function() {
+//			});
+//		});
+//	});
+//}
 
 //----------------------------
 // eof
