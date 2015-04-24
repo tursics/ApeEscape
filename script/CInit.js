@@ -8,12 +8,12 @@ CInit = new function()
 	this.eventReady = function()
 	{
 		try {
-			CHue.init( "ApeEscapeGame", "BerlinGameApe", function() {
-				alert( "Please connect with Philips Hug bridge.");
-			}, function() {
-			});
-
-			CHue.discoverBridges();
+//			CHue.init( "ApeEscapeGame", "BerlinGameApe", function() {
+//				alert( "Please connect with Philips Hug bridge.");
+//			}, function() {
+//			});
+//
+//			CHue.discoverBridges();
 
 			MyMap.eventReady();
 			MyPlayer.eventReady();
