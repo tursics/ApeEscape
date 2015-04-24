@@ -1,0 +1,189 @@
+﻿@-ms-viewport {
+	width:device-width;
+}
+
+body, html {
+	font-size:1.1em;
+	margin:0;
+	overflow:hidden;
+	-ms-content-zooming:none;
+	padding:0;
+}
+
+body, .ui-body-a {
+	background:#c5b59e;
+}
+
+#bar {
+	background:#ebe8dd;
+	color:#000000;
+	cursor:default;
+	left:0;
+	pointer-events:none;
+	-ms-touch-action:none;
+	height:1.9em;
+	position:absolute;
+	text-shadow:none;
+	top:0;
+	width:100%;
+	z-index:1;
+}
+
+#innerBar {
+	border:.4em solid #c5b59e;
+	height:1.2em;
+}
+
+#bar #stepCount, #bar #stepDisplay, #bar #stepAbort {
+	display:inline;
+	margin:0;
+}
+
+#bar #stepCount {
+	border-right:.4em solid #c5b59e;
+	display:inline;
+	float:left;
+	padding:0.1em 0.6em 0.1em 0.6em;
+}
+
+#bar #stepDisplay {
+/*	float:left;*/
+}
+
+#bar #stepAbort {
+	border-left:.4em solid #c5b59e;
+	float:right;
+	margin:-0.5em;
+	padding:0.6em 1.1em 0.6em 0.6em;
+	pointer-events:auto;
+	-ms-touch-action:auto;
+}
+
+#bar #stepPlayer {
+	display:inline;
+	float:left;
+	height:2.4em;
+	margin:-.35em 0 -1em 0;
+	padding:0 0 0 0em;
+	width:2.4em;
+}
+
+#bar #stepStation {
+	margin:0;
+	overflow:hidden;
+	padding:0.1em .5em 0.1em 0;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+}
+
+#map {
+	cursor:default;
+	left:0;
+	pointer-events:none;
+	-ms-touch-action:none;
+	position:absolute;
+	top:0;
+	z-index:1;
+}
+
+#breadcrumb {
+	left:0;
+	position:absolute;
+	top:0;
+	width:5em;
+	z-index:800;
+}
+
+#breadcrumb div {
+	background:#eae8dd;
+	border:2px solid #ffffff;
+	color:#ffffff;
+	display:none;
+	height:1em;
+	margin:2px 0 0 2px;
+	padding:2px;
+	width:100%;
+}
+
+.crumb {
+	cursor:default;
+	display:none;
+	left:0;
+	position:absolute;
+	top:0;
+	z-index:2;
+}
+ 
+ .meeple {
+	cursor:default;
+	display:none;
+	left:0;
+	pointer-events:none;
+	-ms-touch-action:none;
+	position:absolute;
+	top:0;
+	z-index:3;
+}
+
+.orbit {
+	cursor:default;
+	display:none;
+	left:0;
+	position:absolute;
+	top:0;
+	z-index:2;
+}
+
+#dialog {
+	background:rgba(255,255,255,0.05);
+	display:none;
+	left:0;
+	height:100%;
+	margin:0;
+	padding:0;
+	position:absolute;
+	top:0;
+	width:100%;
+	z-index:10000;
+}
+
+#dialog #msg {
+	background:#ffffff;
+	border:.4em solid #867050;
+	color:#000000;
+/*	height:50%;*/
+	margin:0em auto 0 auto;
+	width:50%;
+	text-align:center;
+	text-shadow:none;
+}
+
+#dialog #msgIcon {
+	margin:.5em auto -1em auto;
+	height:5em;
+	pointer-events:none;
+	-ms-touch-action:none;
+}
+
+#dialog #msgText {
+	margin:0 .5em 0 .5em;
+	pointer-events:none;
+	-ms-touch-action:none;
+}
+
+#dialog #msgButtons {
+	margin:.5em auto .5em auto;
+	padding:1em 0 1em 0;
+	text-align:center;
+}
+
+#dialog #msgButton1, #dialog #msgButton2 {
+	background:#c5b59e;
+	border:.2em solid #867050;
+	color:#ffffff;
+	display:inline;
+	margin:0 .5em 0 .5em;
+	padding:.5em 1em;
+	text-align:center;
+/*	width:3em;*/
+}
