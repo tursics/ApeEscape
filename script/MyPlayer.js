@@ -168,10 +168,11 @@ MyPlayer = new function()
 				}
 
 				++num;
+				var visible = (num < 5);
 				if( num < this.maxPlayer_) {
-					this.born( point, function() {});
+					this.born( point, visible, function() {});
 				} else {
-					this.born( point, function() {
+					this.born( point, visible, function() {
 						MyPlayer.currentPlayer_ = -1;
 						MyPlayer.currentStep_ = 0;
 //						MyPlayer.currentCrumb_ = 2;
@@ -236,16 +237,31 @@ MyPlayer = new function()
 				return;
 			}
 
-			++this.currentPlayer_;
-			if( this.currentPlayer_ >= this.player_.length) {
-				this.currentPlayer_ = 0;
-			}
+			do {
+				++this.currentPlayer_;
+				if( this.currentPlayer_ >= this.player_.length) {
+					this.currentPlayer_ = 0;
+				}
+				if( this.currentPlayer_ == 0) {
+					break;
+				}
+				if( this.player_[ this.currentPlayer_].visible) {
+					break;
+				}
+			} while( true);
 
 			switch( this.currentPlayer_) {
 			case 0: $( '#stepPlayer').attr( 'src',  0 == this.currentCrumb_ ? (CConfig.os.firefox == CConfig.platform ? 'artFxOS/' : 'art/') + 'meepleApe.png' : (CConfig.os.firefox == CConfig.platform ? 'artFxOS/' : 'art/') + 'meepleTransparent.png'); break;
 			case 1: $( '#stepPlayer').attr( 'src', (CConfig.os.firefox == CConfig.platform ? 'artFxOS/' : 'art/') + 'meepleRed.png'); break;
 			case 2: $( '#stepPlayer').attr( 'src', (CConfig.os.firefox == CConfig.platform ? 'artFxOS/' : 'art/') + 'meepleYellow.png'); break;
 			case 3: $( '#stepPlayer').attr( 'src', (CConfig.os.firefox == CConfig.platform ? 'artFxOS/' : 'art/') + 'meeplePurple.png'); break;
+			case 4: $( '#stepPlayer').attr( 'src', (CConfig.os.firefox == CConfig.platform ? 'artFxOS/' : 'art/') + 'meepleBlue.png'); break;
+			case 5: $( '#stepPlayer').attr( 'src', (CConfig.os.firefox == CConfig.platform ? 'artFxOS/' : 'art/') + 'meepleBlack.png'); break;
+			case 6: $( '#stepPlayer').attr( 'src', (CConfig.os.firefox == CConfig.platform ? 'artFxOS/' : 'art/') + 'meepleGreen.png'); break;
+			case 7: $( '#stepPlayer').attr( 'src', (CConfig.os.firefox == CConfig.platform ? 'artFxOS/' : 'art/') + 'meepleOrange.png'); break;
+			case 8: $( '#stepPlayer').attr( 'src', (CConfig.os.firefox == CConfig.platform ? 'artFxOS/' : 'art/') + 'meeplePink.png'); break;
+			case 9: $( '#stepPlayer').attr( 'src', (CConfig.os.firefox == CConfig.platform ? 'artFxOS/' : 'art/') + 'meepleCyan.png'); break;
+			case 10:$( '#stepPlayer').attr( 'src', (CConfig.os.firefox == CConfig.platform ? 'artFxOS/' : 'art/') + 'meepleWhite.png'); break;
 			}
 			if(( 0 == this.currentPlayer_) && (0 < this.currentCrumb_)) {
 				$( '#stepStation').html( '');
@@ -330,11 +346,16 @@ MyPlayer = new function()
 	}
 
 	//------------------------
-	this.born = function( point, func)
+	this.born = function( point, visible, func)
 	{
 		var mapPos = MyMap.pointToMap( point);
+
+		if(( this.player_.length > 0) && !visible) {
+			point = MyMap.mapPoints_.length;
+		}
+
 		this.player_.push({
-			visible: this.player_.length > 0,
+			visible: this.player_.length > 0 ? visible : false,
 			x: mapPos.x,
 			y: mapPos.y,
 			point: point
@@ -357,7 +378,7 @@ MyPlayer = new function()
 			var pos = MyMap.mapToPixel( MyPlayer.player_[ currentId].x, MyPlayer.player_[ currentId].y);
 
 			$( this).css({
-				display: (currentId > 0 ? 'block' : 'none'),
+				display: (MyPlayer.player_[ currentId].visible ? 'block' : 'none'),
 			}).transition({
 				top: parseInt( offset.y + pos.y - mSize.y / 2),
 			}, 500, 'out', function() {
@@ -741,6 +762,9 @@ MyPlayer = new function()
 			if( me == number) {
 				continue;
 			}
+			if( !this.player_[ number].visible) {
+				continue;
+			}
 			for( bi = 0; bi < blocked.length; ++bi) {
 				if( blocked[ bi] == this.player_[ number].point) {
 					break;
@@ -801,7 +825,7 @@ MyPlayer = new function()
 	this.crumbHeight_ = 60;
 	this.mapWidth_ = 100;
 	this.mapHeight_ = 100;
-	this.maxPlayer_ = 4;
+	this.maxPlayer_ = 11;
 	this.maxCrumb_ = 0;
 	this.enableOrbit_ = false;
 	this.enableApe_ = false;
