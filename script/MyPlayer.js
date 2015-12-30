@@ -2,6 +2,27 @@
 //---       MyPlayer.js        ---
 //--------------------------------
 
+// test for 'Makey Makey' implementation
+/*document.onkeydown = function(event)
+{
+	if( event.keyCode == 38) {
+		// up
+		MyPlayer.eventOrbitClick( 0);
+	} else if( event.keyCode == 39) {
+		// right
+		MyPlayer.eventOrbitClick( 1);
+	} else if( event.keyCode == 40) {
+		// down
+		MyPlayer.eventOrbitClick( 2);
+	} else if( event.keyCode == 37) {
+		// links
+		MyPlayer.eventOrbitClick( 3);
+	} else if( event.keyCode == 32) {
+		// space
+		MyPlayer.eventOrbitClick( 4);
+	}
+}*/
+
 MyPlayer = new function()
 {
 	//------------------------
