@@ -109,6 +109,22 @@ MyMap = new function()
 	}
 
 	//------------------------
+	this.isElevatorFine = function( point)
+	{
+		if( CConfig.debug && (point >= this.mapPoints_.length)) {
+			alert( 'Point ' + point + ' is not available');
+		}
+
+		if( this.mapPoints_[ point].elevator != undefined) {
+			if( CElevator.data_[ this.mapPoints_[ point].elevator] != undefined) {
+				return CElevator.data_[this.mapPoints_[ point].elevator].active;
+			}
+		}
+
+		return true;
+	}
+
+	//------------------------
 	this.messageDialog = function( $image, $text, $button1, $button2, $func1, $func2)
 	{
 		try {

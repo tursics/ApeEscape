@@ -503,6 +503,17 @@ MyPlayer = new function()
 		var crumbs = MyMap.getPossibleCrumbs( this.player_[ number].point);
 		var oSize = MyMap.mapToPixel( this.orbitWidth_, this.orbitHeight_);
 		var playerPos = MyMap.mapToPixel( this.player_[ number].x, this.player_[ number].y);
+		var elevator = MyMap.isElevatorFine( this.player_[ number].point);
+
+		if( !elevator) {
+			var meeple = $( '#stepPlayer').attr( 'src');
+			meeple = meeple.split('/')[1];
+			MyMap.messageDialog( meeple, _( 'msgElevator'), _( 'msgElevatorButton'), '', function() {
+				MyMap.messageDialogHide( function() {
+console.log('ignore this round');
+				});
+			});
+		}
 
 		while( this.orbit_.length < 8) {
 			this.orbit_.push({

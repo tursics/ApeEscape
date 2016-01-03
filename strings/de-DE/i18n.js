@@ -19,6 +19,9 @@ gDict['de'] = {
 	'msgAbortButtonYes': 'Ja',
 	'msgAbortButtonNo': 'Nein',
 
+	'msgElevator': 'Du möchtest abkürzen, aber der Fahrstuhl ist gerade kaputt.',
+	'msgElevatorButton': 'Eine Runde aussetzen',
+
 	'helpButtonNext': 'Weiter',
 
 	'helpIntro': 'Ein Affe ist aus dem Berliner Zoo ausgebrochen. Keiner weiß, wo er gerade ist. Das hier, das bist du.',
