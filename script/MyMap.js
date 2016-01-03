@@ -207,7 +207,7 @@ MyMap = new function()
 		{x:450,y:350,moves:[15,18,24],            crumb:'uuu',    name:'Gleisdreieck'},
 		{x:650,y:350,moves:[16,21,24,29],         crumb:'uuuu',   name:'Hallesches Tor'},
 		{x:750,y:350,moves:[11,20,22,30],         crumb:'uuuu',   name:'Kottbusser Tor'},
-		{x:850,y:350,moves:[11,21,23],            crumb:'sus',    name:'Warschauer Straße'},
+		{x:850,y:350,moves:[11,21,23],            crumb:'sus',    name:'Warschauer Straße',parking:[6233,6235]/*Ostbahnhof*/},
 		{x:950,y:350,moves:[12,22,32],            crumb:'sss',    name:'Ostkreuz'},
 		{x:600,y:400,moves:[19,20,28,29],         crumb:'uuuu',   name:'Möckernbrücke'},
 		{x:150,y:450,moves:[14,17,26,31],         crumb:'uuuu',   name:'Fehrbelliner Platz'},
@@ -221,7 +221,7 @@ MyMap = new function()
 		{x:250,y:550,moves:[26,31,34],            crumb:'uss',    name:'Bundesplatz'},
 		{x:350,y:550,moves:[27,33,35],            crumb:'uss',    name:'Innsbrucker Platz'},
 		{x:450,y:550,moves:[28,34,36],            crumb:'sss',    name:'Schöneberg',elevator:558},
-		{x:550,y:550,moves:[28,35,37],            crumb:'sss',    name:'Südkreuz'},
+		{x:550,y:550,moves:[28,35,37],            crumb:'sss',    name:'Südkreuz',parking:[2565]},
 		{x:650,y:550,moves:[29,36,38],            crumb:'uss',    name:'Tempelhof'},
 		{x:750,y:550,moves:[30,32,37],            crumb:'uss',    name:'Hermannstraße'}
 	];
