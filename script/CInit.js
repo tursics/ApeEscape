@@ -18,6 +18,19 @@ CInit = new function()
 			MyMap.eventReady();
 			MyPlayer.eventReady();
 
+			CElevator.init();
+			CElevator.getData( function( data) {
+				$.each( MyMap.mapPoints_, function(index, item) {
+					if( item.elevator != undefined) {
+						if( data[item.elevator] != undefined) {
+console.log(item.name+': '+data[item.elevator].active);
+						}
+					}
+				});
+			}, function() {
+				console.log('elevator error');
+			});
+
 //			alert( "I'm ready.");
 		} catch( e) { if( CConfig.debug) { alert( e); } }
 	};
