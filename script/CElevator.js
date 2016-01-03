@@ -34,8 +34,6 @@ CElevator = new function()
 			success:function(data) {
 				for( var i = 0; i < data.length; ++i) {
 					var item = data[i];
-if(item.geocoordX<13) continue;
-if(item.geocoordX>14) continue;
 					if( CElevator.data_[item.stationnumber] != undefined) {
 						if( CElevator.data_[item.stationnumber].active) {
 							CElevator.data_[item.stationnumber].active = ('ACTIVE'==item.state);
