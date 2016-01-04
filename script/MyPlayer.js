@@ -379,7 +379,8 @@ MyPlayer = new function()
 			visible: this.player_.length > 0 ? visible : false,
 			x: mapPos.x,
 			y: mapPos.y,
-			point: point
+			point: point,
+			suspend: 0
 		});
 
 		var number = this.player_.length - 1;
@@ -504,15 +505,43 @@ MyPlayer = new function()
 		var oSize = MyMap.mapToPixel( this.orbitWidth_, this.orbitHeight_);
 		var playerPos = MyMap.mapToPixel( this.player_[ number].x, this.player_[ number].y);
 		var elevator = MyMap.isElevatorFine( this.player_[ number].point);
+		var parking = MyMap.isParkingFine( this.player_[ number].point);
+
+		if( this.player_[ number].suspend > 0) {
+			--this.player_[ number].suspend;
+			elevator = true;
+			parking = true;
+
+			if( this.player_[ number].suspend > 0) {
+				return;
+			}
+		}
 
 		if( !elevator) {
+			this.player_[ number].suspend = 1;
+
 			var meeple = $( '#stepPlayer').attr( 'src');
 			meeple = meeple.split('/')[1];
 			MyMap.messageDialog( meeple, _( 'msgElevator'), _( 'msgElevatorButton'), '', function() {
 				MyMap.messageDialogHide( function() {
-console.log('ignore this round');
+					MyPlayer.nextStepGame();
 				});
 			});
+
+			return;
+		}
+		if( !parking) {
+			this.player_[ number].suspend = 1;
+
+			var meeple = $( '#stepPlayer').attr( 'src');
+			meeple = meeple.split('/')[1];
+			MyMap.messageDialog( meeple, _( 'msgParking'), _( 'msgParkingButton'), '', function() {
+				MyMap.messageDialogHide( function() {
+					MyPlayer.nextStepGame();
+				});
+			});
+
+			return;
 		}
 
 		while( this.orbit_.length < 8) {

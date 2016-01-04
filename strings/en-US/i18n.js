@@ -19,8 +19,11 @@ gDict['en'] = {
 	'msgAbortButtonYes': 'Yes',
 	'msgAbortButtonNo': 'No',
 
-	'msgElevator': 'You want to take a shortcut but the elevator is out of order.',
+	'msgElevator': 'You want to take a shortcut but the elevator is out of service.',
 	'msgElevatorButton': 'Miss one turn',
+
+	'msgParking': 'You meet a fried to help hunting, but he did not find a free parking slot. You wait for him.',
+	'msgParkingButton': 'Miss one turn',
 
 	'helpButtonNext': 'Next',
 
