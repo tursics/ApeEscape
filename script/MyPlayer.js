@@ -554,6 +554,7 @@ MyPlayer = new function()
 			});
 		}
 
+		var orbitCount = 0;
 		for( var idx = 0; idx < this.orbit_.length; ++idx) {
 			var full = false;
 			for( var i = 1; i < this.player_.length; ++i) {
@@ -563,6 +564,7 @@ MyPlayer = new function()
 				}
 			}
 			if( !full && (idx < moves.length)) {
+				++orbitCount;
 				var mapPos = MyMap.pointToMap( moves[ idx]);
 
 				this.orbit_[ idx].visible = true;
@@ -588,6 +590,16 @@ MyPlayer = new function()
 					}, 500, 'out');
 				});
 			}
+		}
+
+		if( 0 == orbitCount) {
+			MyMap.messageDialog( meeple, _( 'msgNarrowly'), _( 'msgNarrowlyButton'), '', function() {
+				MyMap.messageDialogHide( function() {
+					MyPlayer.nextStepGame();
+				});
+			});
+
+			return;
 		}
 
 		this.enableOrbit_ = true;

@@ -25,6 +25,9 @@ gDict['en'] = {
 	'msgParking': 'You meet a fried to help hunting, but he did not find a free parking slot. You wait for him.',
 	'msgParkingButton': 'Miss one turn',
 
+	'msgNarrowly': 'Damn! No more space to move.',
+	'msgNarrowlyButton': 'Wait a turn',
+
 	'helpButtonNext': 'Next',
 
 	'helpIntro': 'An ape has escaped from the Berlin Zoo. Nobody knows where he is right now. That one here, that is you.',

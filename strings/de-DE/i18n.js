@@ -25,6 +25,9 @@ gDict['de'] = {
 	'msgParking': 'Ein Freund möchte dir helfen, findet aber gerade keinen freien Parkplatz. Du musst auf ihn warten.',
 	'msgParkingButton': 'Eine Runde aussetzen',
 
+	'msgNarrowly': 'Mist! Es ist kein Platz zum Bewegen übrig.',
+	'msgNarrowlyButton': 'Warte eine Runde',
+
 	'helpButtonNext': 'Weiter',
 
 	'helpIntro': 'Ein Affe ist aus dem Berliner Zoo ausgebrochen. Keiner weiß, wo er gerade ist. Das hier, das bist du.',
