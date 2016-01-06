@@ -3,7 +3,7 @@
 gDict['en'] = {
 	'appLang': 'en-US',
 	'appName': 'Ape Escape',
-	'appDescription': 'An ape has escaped from the Berlin Zoo. Nobody knows where he is right now.',
+	'appDescription': 'An ape has escaped from the Berlin Zoo. Nobody knows where it is right now.',
 
 	'barStepCount': 'Step %count%',
 	'barStepAbort': 'Cancel',
@@ -19,24 +19,24 @@ gDict['en'] = {
 	'msgAbortButtonYes': 'Yes',
 	'msgAbortButtonNo': 'No',
 
-	'msgElevator': 'You want to take a shortcut but the elevator is out of service.',
-	'msgElevatorButton': 'Miss one turn',
+	'msgElevator': 'You want to cut short, but the elevator is out of service.',
+	'msgElevatorButton': 'You lose a turn',
 
-	'msgParking': 'You meet a fried to help hunting, but he did not find a free parking slot. You wait for him.',
-	'msgParkingButton': 'Miss one turn',
+	'msgParking': 'Your friend arrives to help you hunting, but cannot find a free parking lot. Wait for him.',
+	'msgParkingButton': 'You lose a turn',
 
-	'msgNarrowly': 'Damn! No more space to move.',
+	'msgNarrowly': 'Damn! No free space to move to.',
 	'msgNarrowlyButton': 'Wait a turn',
 
 	'helpButtonNext': 'Next',
 
-	'helpIntro': 'An ape has escaped from the Berlin Zoo. Nobody knows where he is right now. That one here, that is you.',
-	'helpDriveLines': 'Take the underground train (blue line) or the fast train (green line) to get from one field to the other.',
-	'helpDriveStation': 'You can only travel one station at a time. Touch the next station with your fingertip.',
-	'help2ndPlayer': 'You also direct the yellow player. Keep in mind that you can only travel to a free field.',
-	'help3rdPlayer': 'In a group of three, it is even more fun! So you also direct the purple player.',
-	'helpShowApe': 'There is the ape, catch him!!! Once and again he will let you know his position and is visible for a short time.',
-	'helpHideApe': 'In a glance he vanishes again and takes his next step in secret.',
-	'helpBreadcrumb': 'Which train the ape took, you can see in the left column.',
-	'helpGetStarted': 'Get ready. It starts: Catch the ape!',
+	'helpIntro': 'An ape has escaped from the Berlin Zoo. Nobody knows where it is right now. That player here, that is you.',
+	'helpDriveLines': 'Take the underground train (blue line) or the express train (green line) to travel from one station to the other.',
+	'helpDriveStation': 'You can only travel one station at a time. To head for the next station, touch it with your fingertip.',
+	'help2ndPlayer': 'You also direct the yellow player. Keep in mind that you can only travel to a free station.',
+	'help3rdPlayer': 'Playing is even more fun in a group of three! So you also direct the purple player.',
+	'helpShowApe': 'There is the ape, catch it!!! Now and then it will let you know its position and is visible for a short time.',
+	'helpHideApe': 'In an instant, it vanishes again and takes its next step in secret.',
+	'helpBreadcrumb': 'In the left column, you can see which train the ape took.',
+	'helpGetStarted': 'Get ready. Now it starts: Catch the ape!',
 };
