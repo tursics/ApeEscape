@@ -436,7 +436,7 @@ MyPlayer = new function()
 		var mSize = MyMap.mapToPixel( this.mapWidth_, this.mapHeight_);
 
 		if( 0 == number) {
-			$( '#crumb' + this.currentCrumb_).attr( 'src', (CConfig.os.firefox == CConfig.platform ? 'artFxOS/' : 'art/') + 'crumb' + crumb.toUpperCase() + 'Bahn.png');
+			$( '#crumb' + this.currentCrumb_).attr( 'src', (CConfig.os.firefox == CConfig.platform ? 'artFxOS/' : 'art/') + 'crumb' + crumb.toUpperCase() + 'Bahn.svg');
 //			if( crumb.toUpperCase() == 'S') {
 //				hueS();
 //			} else {
@@ -475,7 +475,7 @@ MyPlayer = new function()
 		for( var idx = 0; idx < this.maxCrumb_; ++idx) {
 			var pos = MyMap.mapToPixel( 0, (this.maxCrumb_ - idx - 1) * this.crumbHeight_);
 
-			$( '#crumb' + idx).attr( 'src', (CConfig.os.firefox == CConfig.platform ? 'artFxOS/' : 'art/') + 'crumbVoid.png');
+			$( '#crumb' + idx).attr( 'src', (CConfig.os.firefox == CConfig.platform ? 'artFxOS/' : 'art/') + 'crumbVoid.svg');
 			$( '#crumb' + idx).css({
 				display: 'block',
 				top: parseInt( offset.y + pos.y),
@@ -484,7 +484,7 @@ MyPlayer = new function()
 				height: parseInt( cSize.y)
 			});
 		}
-		$( '#crumb0').attr( 'src', (CConfig.os.firefox == CConfig.platform ? 'artFxOS/' : 'art/') + 'crumbShow.png');
+		$( '#crumb0').attr( 'src', (CConfig.os.firefox == CConfig.platform ? 'artFxOS/' : 'art/') + 'crumbShow.svg');
 	}
 
 	//------------------------
