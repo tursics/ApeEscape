@@ -27,6 +27,6 @@ Now and then the ape will let you know its position and is visible for a short t
 
 ## Licenses
 
-The code uses the MIT license. All graphics and texts uses the CC-BY-4.0 license. The parking data use the CC-BY 4.0 license with the attribution of "DB BahnPark GmbH". The elevator data use the CC-BY 4.0 license with the attribution of "DB Station&Service AG". The 3D buildings are provided as Open Data by Berlin Partner für Wirtschaft und Technologie GmbH.
+The code uses the MIT license. All graphics and texts uses the CC-BY-4.0 license. The parking data use the CC-BY 4.0 license with the attribution of "DB BahnPark GmbH". The elevator data use the CC-BY 4.0 license with the attribution of "DB Station&Service AG". The 3D buildings are provided as Open Data by "Berlin Partner für Wirtschaft und Technologie GmbH".
 
 The "S-Bahn-Logo" is registered trademark of Deutsche Bahn AG. The usage of this trademark is prohibited in games like mine.
