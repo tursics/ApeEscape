@@ -46,7 +46,7 @@ MyPlayer = new function()
 
 		$( '#stepAbort').html( _( 'barStepAbort'));
 		$( '#stepAbort').bind( 'vmouseup', function( event, ui) {
-			MyMap.messageDialog( 'meepleRed.png', _( 'msgAbort'), _( 'msgAbortButtonYes'), _( 'msgAbortButtonNo'), function() {
+			MyMap.messageDialog( 'meepleRed.svg', _( 'msgAbort'), _( 'msgAbortButtonYes'), _( 'msgAbortButtonNo'), function() {
 				MyMap.messageDialogHide( function() {
 					MyPlayer.finishGame( function() {
 						MyPlayer.startNewGame();
@@ -61,7 +61,7 @@ MyPlayer = new function()
 
 		// will be done in this.startNewGame()
 //		$( '#stepCount').html( _( 'appName'));
-//		$( '#stepPlayer').attr( 'src', (CConfig.os.firefox == CConfig.platform ? 'artFxOS/' : 'art/') + 'meepleTransparent.png');
+//		$( '#stepPlayer').attr( 'src', (CConfig.os.firefox == CConfig.platform ? 'artFxOS/' : 'art/') + 'meepleTransparent.svg');
 //		$( '#stepStation').html( '');
 //
 //		MyPlayer.currentCrumb_ = 0;
@@ -153,7 +153,7 @@ MyPlayer = new function()
 	this.startNewGame = function()
 	{
 		$( '#stepCount').html( _( 'appName'));
-		$( '#stepPlayer').attr( 'src', (CConfig.os.firefox == CConfig.platform ? 'artFxOS/' : 'art/') + 'meepleTransparent.png');
+		$( '#stepPlayer').attr( 'src', (CConfig.os.firefox == CConfig.platform ? 'artFxOS/' : 'art/') + 'meepleTransparent.svg');
 		$( '#stepStation').html( '');
 
 		MyPlayer.currentCrumb_ = 0;
@@ -163,7 +163,7 @@ MyPlayer = new function()
 			MyPlayer.die();
 		}
 
-		MyMap.messageDialog( 'meepleApe.png', _( 'msgStart'), _( 'msgStartButtonGo'), _( 'msgStartButtonHelp'), function() {
+		MyMap.messageDialog( 'meepleApe.svg', _( 'msgStart'), _( 'msgStartButtonGo'), _( 'msgStartButtonHelp'), function() {
 			MyMap.messageDialogHide( function() {
 				MyPlayer.startNewGameGo();
 			});
@@ -201,7 +201,7 @@ MyPlayer = new function()
 						MyPlayer.enableApe_ = false;
 
 						$( '#stepCount').html( _( 'barStepCount').replace(/%count%/g, MyPlayer.currentStep_));
-						$( '#stepPlayer').attr( 'src', (CConfig.os.firefox == CConfig.platform ? 'artFxOS/' : 'art/') + 'meepleTransparent.png');
+						$( '#stepPlayer').attr( 'src', (CConfig.os.firefox == CConfig.platform ? 'artFxOS/' : 'art/') + 'meepleTransparent.svg');
 						$( '#stepStation').html( '');
 
 						MyPlayer.showBreadcrumb();
@@ -216,15 +216,15 @@ MyPlayer = new function()
 	this.startHelp = function()
 	{
 		try {
-			MyMap.messageDialogUpdate( 'meepleRed.png', _( 'helpIntro'), _( 'helpButtonNext'), '', function() {
-				MyMap.messageDialogUpdate( 'meepleRed.png', _( 'helpDriveLines'), _( 'helpButtonNext'), '', function() {
-					MyMap.messageDialogUpdate( 'meepleRed.png', _( 'helpDriveStation'), _( 'helpButtonNext'), '', function() {
-						MyMap.messageDialogUpdate( 'meepleYellow.png', _( 'help2ndPlayer'), _( 'helpButtonNext'), '', function() {
-							MyMap.messageDialogUpdate( 'meeplePurple.png', _( 'help3rdPlayer'), _( 'helpButtonNext'), '', function() {
-								MyMap.messageDialogUpdate( 'meepleApe.png', _( 'helpShowApe'), _( 'helpButtonNext'), '', function() {
-									MyMap.messageDialogUpdate( 'meepleTransparent.png', _( 'helpHideApe'), _( 'helpButtonNext'), '', function() {
-										MyMap.messageDialogUpdate( 'meepleTransparent.png', _( 'helpBreadcrumb'), _( 'helpButtonNext'), '', function() {
-											MyMap.messageDialogUpdate( 'meepleTransparent.png', _( 'helpGetStarted'), _( 'helpButtonNext'), '', function() {
+			MyMap.messageDialogUpdate( 'meepleRed.svg', _( 'helpIntro'), _( 'helpButtonNext'), '', function() {
+				MyMap.messageDialogUpdate( 'meepleRed.svg', _( 'helpDriveLines'), _( 'helpButtonNext'), '', function() {
+					MyMap.messageDialogUpdate( 'meepleRed.svg', _( 'helpDriveStation'), _( 'helpButtonNext'), '', function() {
+						MyMap.messageDialogUpdate( 'meepleYellow.svg', _( 'help2ndPlayer'), _( 'helpButtonNext'), '', function() {
+							MyMap.messageDialogUpdate( 'meeplePurple.svg', _( 'help3rdPlayer'), _( 'helpButtonNext'), '', function() {
+								MyMap.messageDialogUpdate( 'meepleApe.svg', _( 'helpShowApe'), _( 'helpButtonNext'), '', function() {
+									MyMap.messageDialogUpdate( 'meepleTransparent.svg', _( 'helpHideApe'), _( 'helpButtonNext'), '', function() {
+										MyMap.messageDialogUpdate( 'meepleTransparent.svg', _( 'helpBreadcrumb'), _( 'helpButtonNext'), '', function() {
+											MyMap.messageDialogUpdate( 'meepleTransparent.svg', _( 'helpGetStarted'), _( 'helpButtonNext'), '', function() {
 												MyMap.messageDialogHide( function() {
 													MyPlayer.startNewGame();
 												});
@@ -247,7 +247,7 @@ MyPlayer = new function()
 			if( this.caught()) {
 				this.finishGame( function() {
 					MyPlayer.showApe( function() {
-						MyMap.messageDialog( 'meepleApe.png', _( 'msgWin').replace(/%count%/g, MyPlayer.currentStep_), _( 'msgWinButtonGo'), '', function() {
+						MyMap.messageDialog( 'meepleApe.svg', _( 'msgWin').replace(/%count%/g, MyPlayer.currentStep_), _( 'msgWinButtonGo'), '', function() {
 							MyMap.messageDialogHide( function() {
 								MyPlayer.startNewGame();
 							});
@@ -272,17 +272,17 @@ MyPlayer = new function()
 			} while( true);
 
 			switch( this.currentPlayer_) {
-			case 0: $( '#stepPlayer').attr( 'src',  0 == this.currentCrumb_ ? (CConfig.os.firefox == CConfig.platform ? 'artFxOS/' : 'art/') + 'meepleApe.png' : (CConfig.os.firefox == CConfig.platform ? 'artFxOS/' : 'art/') + 'meepleTransparent.png'); break;
-			case 1: $( '#stepPlayer').attr( 'src', (CConfig.os.firefox == CConfig.platform ? 'artFxOS/' : 'art/') + 'meepleRed.png'); break;
-			case 2: $( '#stepPlayer').attr( 'src', (CConfig.os.firefox == CConfig.platform ? 'artFxOS/' : 'art/') + 'meepleYellow.png'); break;
-			case 3: $( '#stepPlayer').attr( 'src', (CConfig.os.firefox == CConfig.platform ? 'artFxOS/' : 'art/') + 'meeplePurple.png'); break;
-			case 4: $( '#stepPlayer').attr( 'src', (CConfig.os.firefox == CConfig.platform ? 'artFxOS/' : 'art/') + 'meepleBlue.png'); break;
-			case 5: $( '#stepPlayer').attr( 'src', (CConfig.os.firefox == CConfig.platform ? 'artFxOS/' : 'art/') + 'meepleBlack.png'); break;
-			case 6: $( '#stepPlayer').attr( 'src', (CConfig.os.firefox == CConfig.platform ? 'artFxOS/' : 'art/') + 'meepleGreen.png'); break;
-			case 7: $( '#stepPlayer').attr( 'src', (CConfig.os.firefox == CConfig.platform ? 'artFxOS/' : 'art/') + 'meepleOrange.png'); break;
-			case 8: $( '#stepPlayer').attr( 'src', (CConfig.os.firefox == CConfig.platform ? 'artFxOS/' : 'art/') + 'meeplePink.png'); break;
-			case 9: $( '#stepPlayer').attr( 'src', (CConfig.os.firefox == CConfig.platform ? 'artFxOS/' : 'art/') + 'meepleCyan.png'); break;
-			case 10:$( '#stepPlayer').attr( 'src', (CConfig.os.firefox == CConfig.platform ? 'artFxOS/' : 'art/') + 'meepleWhite.png'); break;
+			case 0: $( '#stepPlayer').attr( 'src',  0 == this.currentCrumb_ ? (CConfig.os.firefox == CConfig.platform ? 'artFxOS/' : 'art/') + 'meepleApe.svg' : (CConfig.os.firefox == CConfig.platform ? 'artFxOS/' : 'art/') + 'meepleTransparent.svg'); break;
+			case 1: $( '#stepPlayer').attr( 'src', (CConfig.os.firefox == CConfig.platform ? 'artFxOS/' : 'art/') + 'meepleRed.svg'); break;
+			case 2: $( '#stepPlayer').attr( 'src', (CConfig.os.firefox == CConfig.platform ? 'artFxOS/' : 'art/') + 'meepleYellow.svg'); break;
+			case 3: $( '#stepPlayer').attr( 'src', (CConfig.os.firefox == CConfig.platform ? 'artFxOS/' : 'art/') + 'meeplePurple.svg'); break;
+			case 4: $( '#stepPlayer').attr( 'src', (CConfig.os.firefox == CConfig.platform ? 'artFxOS/' : 'art/') + 'meepleBlue.svg'); break;
+			case 5: $( '#stepPlayer').attr( 'src', (CConfig.os.firefox == CConfig.platform ? 'artFxOS/' : 'art/') + 'meepleBlack.svg'); break;
+			case 6: $( '#stepPlayer').attr( 'src', (CConfig.os.firefox == CConfig.platform ? 'artFxOS/' : 'art/') + 'meepleGreen.svg'); break;
+			case 7: $( '#stepPlayer').attr( 'src', (CConfig.os.firefox == CConfig.platform ? 'artFxOS/' : 'art/') + 'meepleOrange.svg'); break;
+			case 8: $( '#stepPlayer').attr( 'src', (CConfig.os.firefox == CConfig.platform ? 'artFxOS/' : 'art/') + 'meeplePink.svg'); break;
+			case 9: $( '#stepPlayer').attr( 'src', (CConfig.os.firefox == CConfig.platform ? 'artFxOS/' : 'art/') + 'meepleCyan.svg'); break;
+			case 10:$( '#stepPlayer').attr( 'src', (CConfig.os.firefox == CConfig.platform ? 'artFxOS/' : 'art/') + 'meepleWhite.svg'); break;
 			}
 			if(( 0 == this.currentPlayer_) && (0 < this.currentCrumb_)) {
 				$( '#stepStation').html( '');
@@ -348,7 +348,7 @@ MyPlayer = new function()
 			this.hideOrbit( function() {
 				MyPlayer.hideBreadcrumb();
 
-				$( '#stepPlayer').attr( 'src', (CConfig.os.firefox == CConfig.platform ? 'artFxOS/' : 'art/') + 'meepleApe.png');
+				$( '#stepPlayer').attr( 'src', (CConfig.os.firefox == CConfig.platform ? 'artFxOS/' : 'art/') + 'meepleApe.svg');
 				$( '#stepStation').html( MyMap.getStationName( MyPlayer.player_[ 0].point));
 
 				while( MyPlayer.player_.length > 1) {
@@ -656,7 +656,7 @@ MyPlayer = new function()
 	this.showApe = function( func)
 	{
 		this.enableApe_ = true;
-		$( '#player0').attr( 'src', (CConfig.os.firefox == CConfig.platform ? 'artFxOS/' : 'art/') + 'meepleApe.png');
+		$( '#player0').attr( 'src', (CConfig.os.firefox == CConfig.platform ? 'artFxOS/' : 'art/') + 'meepleApe.svg');
 
 //		if( !this.isApeVisible()) {
 			var number = 0;
@@ -685,7 +685,7 @@ MyPlayer = new function()
 	{
 //		this.bounceApe( function() {
 			MyPlayer.enableApe_ = false;
-			$( '#player0').attr( 'src', (CConfig.os.firefox == CConfig.platform ? 'artFxOS/' : 'art/') + 'meepleTransparent.png');
+			$( '#player0').attr( 'src', (CConfig.os.firefox == CConfig.platform ? 'artFxOS/' : 'art/') + 'meepleTransparent.svg');
 
 			func();
 //		});
