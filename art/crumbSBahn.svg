@@ -52,11 +52,11 @@
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:window-width="1920"
-     inkscape:window-height="1096"
-     inkscape:window-x="0"
-     inkscape:window-y="0"
-     inkscape:window-maximized="0"
+     inkscape:window-width="1600"
+     inkscape:window-height="837"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
      showguides="false"
      inkscape:guide-bbox="true">
     <sodipodi:guide
@@ -237,18 +237,14 @@
            width="44"
            id="rect3176"
            style="fill:#41e14e;fill-opacity:1;stroke:none" />
-        <text
-           xml:space="preserve"
+        <g
            style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Designosaur;-inkscape-font-specification:Designosaur"
-           x="27.155188"
-           y="334.47293"
-           id="text3848"
-           sodipodi:linespacing="125%"><tspan
-             sodipodi:role="line"
-             id="tspan3850"
-             x="27.155188"
-             y="334.47293"
-             style="font-size:50px;font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#ffffff;fill-opacity:1;font-family:Comic Sans MS;-inkscape-font-specification:Comic Sans MS Bold Italic">S</tspan></text>
+           id="text3848">
+          <path
+             d="m 29.083899,328.80887 c -2e-6,-1.31835 0.406898,-2.39664 1.220703,-3.23486 0.813798,-0.83821 1.798497,-1.25732 2.954101,-1.25733 1.416008,10e-6 2.384432,0.74871 2.905274,2.24609 0.585928,2.00196 2.514637,3.00294 5.786132,3.00293 2.652978,1e-5 5.521627,-0.61441 8.605958,-1.84326 3.084283,-1.22883 4.626436,-2.90933 4.626464,-5.0415 -2.8e-5,-1.44856 -0.573758,-2.44546 -1.721191,-2.99072 -1.147486,-0.54524 -3.617373,-0.85041 -7.409668,-0.91553 -2.94598,-0.0651 -5.497246,-0.66323 -7.653809,-1.79443 -2.156584,-1.13117 -3.234871,-2.64891 -3.234863,-4.55323 -8e-6,-3.19008 1.928701,-6.27845 5.786133,-9.26513 3.857404,-2.98662 7.991515,-4.47995 12.402344,-4.47998 1.676404,3e-5 3.702769,0.40286 6.079101,1.20849 2.376268,0.8057 3.564418,1.7375 3.564453,2.79541 -3.5e-5,0.74873 -0.382522,1.53405 -1.147461,2.35596 -0.765007,0.82197 -1.692741,1.23294 -2.783203,1.23291 -0.830109,3e-5 -1.961293,-0.17087 -3.393554,-0.5127 -1.334663,-0.32549 -2.457709,-0.48825 -3.369141,-0.48828 -2.132184,3e-5 -4.276551,0.53307 -6.433105,1.59912 -2.156593,1.06611 -3.234879,2.23392 -3.234864,3.50342 -1.5e-5,1.07424 1.057926,1.77411 3.173828,2.09961 l 5.664063,0.26856 c 2.229791,0.0977 4.191052,0.52085 5.883789,1.26953 1.692676,0.74871 2.962206,1.78631 3.808594,3.11279 0.846319,1.32651 1.269496,2.90122 1.269531,4.72412 -3.5e-5,4.54102 -2.172885,8.02816 -6.518555,10.46143 -4.345727,2.43326 -9.415709,3.6499 -15.209961,3.6499 -3.710947,0 -6.575528,-0.70394 -8.59375,-2.11182 -2.018232,-1.40787 -3.027345,-3.08837 -3.027343,-5.0415 z"
+             style="font-size:50px;font-style:italic;font-weight:bold;font-family:Comic Sans MS;-inkscape-font-specification:Comic Sans MS Bold Italic;fill:#ffffff"
+             id="path3028" />
+        </g>
       </g>
     </g>
   </g>
