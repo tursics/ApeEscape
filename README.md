@@ -1,6 +1,6 @@
 # ApeEscape
 
-![Icon](/art/iconApe.svg)
+![Icon](/icon.png)
 
 An ape has escaped from the Berlin Zoo. Nobody knows where it is right now. Take the underground train (blue line) or the express train (green line) to travel from one station to the other. You can only travel one station at a time. To head for the next station, touch it with your fingertip. You direct all three players (no multiplayer version yet). Keep in mind that you can only travel to a free station.
 
