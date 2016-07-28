@@ -1,4 +1,4 @@
-﻿//--------------------------------
+//--------------------------------
 //---         MyMap.js         ---
 //--------------------------------
 
@@ -245,6 +245,126 @@ MyMap = new function()
 		{x:650,y:550,moves:[29,36,38],            crumb:'uss',    name:'Tempelhof'                    },
 		{x:750,y:550,moves:[30,32,37],            crumb:'uss',    name:'Hermannstraße'                }
 	];
+
+	// Westhafen
+	//   CC0  http://www.deutschlands-bahnhoefe.org/node/441
+	//        http://jannisr.de/berlin-subway-guide/#s-u-westhafen-berlin-u9
+	// Wedding
+	//   CC0  http://www.deutschlands-bahnhoefe.org/node/304
+	//        http://jannisr.de/berlin-subway-guide/#s-u-wedding-berlin-u6
+	// Gesundbrunnen
+	//   CC0  http://www.deutschlands-bahnhoefe.org/node/305
+	//        http://jannisr.de/berlin-subway-guide/#s-u-gesundbrunnen-bhf-berlin-u8
+	// Jungfernheide
+	//   nein http://www.deutschlands-bahnhoefe.de/detail.php?bahnhofNr=3067
+	//        http://jannisr.de/berlin-subway-guide/#s-u-jungfernheide-bhf-berlin-u7
+	// Schönhauser Allee
+	//   CC0  http://www.deutschlands-bahnhoefe.org/node/213
+	//        http://jannisr.de/berlin-subway-guide/#s-u-schonhauser-allee-berlin-u2
+	// Kaiserdamm + Messe Nord / ICC
+	//   nein http://www.deutschlands-bahnhoefe.de/detail.php?bahnhofNr=6840
+	//   nein U2
+	// Bismarckstraße
+	//        http://jannisr.de/berlin-subway-guide/#u-bismarckstr-berlin-u2
+	//        http://jannisr.de/berlin-subway-guide/#u-bismarckstr-berlin-u7
+	// Hauptbahnhof
+	//   CC0  http://www.deutschlands-bahnhoefe.org/node/61
+	//        http://jannisr.de/berlin-subway-guide/#s-u-berlin-hauptbahnhof-u55
+	// Friedrichstraße
+	//   CC0  http://www.deutschlands-bahnhoefe.org/node/164
+	//        http://jannisr.de/berlin-subway-guide/#s-u-friedrichstr-bhf-berlin-u6
+	// Zoologischer Garten
+	//   BYSA http://www.deutschlands-bahnhoefe.org/node/9
+	//        http://jannisr.de/berlin-subway-guide/#s-u-zoologischer-garten-bhf-berlin-u2
+	//   nein U9
+	// Brandenburger Tor
+	//   nein http://www.deutschlands-bahnhoefe.de/detail.php?bahnhofNr=6340
+	//        http://jannisr.de/berlin-subway-guide/#s-u-brandenburger-tor-berlin-u55
+	// Alexanderplatz
+	//   CC0  http://www.deutschlands-bahnhoefe.org/node/132
+	//        http://jannisr.de/berlin-subway-guide/#s-u-alexanderplatz-bhf-berlin-u2
+	//        http://jannisr.de/berlin-subway-guide/#s-u-alexanderplatz-bhf-berlin-u5
+	//   nein U8
+	// Frankfurter Allee
+	//   kommt noch
+	//        http://jannisr.de/berlin-subway-guide/#s-u-frankfurter-allee-berlin-u5
+	// Westkreuz
+	//   CC0  http://www.deutschlands-bahnhoefe.org/node/38
+	// Wilmersdorfer Straße
+	//   CC0  http://www.deutschlands-bahnhoefe.org/node/442
+	//   nein U7
+	// Potsdamer Platz
+	//   CC0  http://www.deutschlands-bahnhoefe.org/node/86
+	//        http://jannisr.de/berlin-subway-guide/#s-u-potsdamer-platz-bhf-berlin-u2
+	// Stadtmitte
+	//        http://jannisr.de/berlin-subway-guide/#u-stadtmitte-berlin-u2
+	//        http://jannisr.de/berlin-subway-guide/#u-stadtmitte-berlin-u6
+	// Spichernstraße
+	//        http://jannisr.de/berlin-subway-guide/#u-spichernstr-berlin-u3
+	//        http://jannisr.de/berlin-subway-guide/#u-spichernstr-berlin-u9
+	// Nollendorfplatz
+	//        http://jannisr.de/berlin-subway-guide/#u-nollendorfplatz-berlin-u1
+	//   nein U2
+	//        http://jannisr.de/berlin-subway-guide/#u-nollendorfplatz-berlin-u3
+	//        http://jannisr.de/berlin-subway-guide/#u-nollendorfplatz-berlin-u4
+	// Gleisdreieck
+	//        http://jannisr.de/berlin-subway-guide/#u-gleisdreieck-berlin-u1
+	//        http://jannisr.de/berlin-subway-guide/#u-gleisdreieck-berlin-u2
+	// Hallesches Tor
+	//        http://jannisr.de/berlin-subway-guide/#u-hallesches-tor-berlin-u1
+	//        http://jannisr.de/berlin-subway-guide/#u-hallesches-tor-berlin-u6
+	// Kottbusser Tor
+	//        http://jannisr.de/berlin-subway-guide/#u-kottbusser-tor-berlin-u1
+	//        http://jannisr.de/berlin-subway-guide/#u-kottbusser-tor-berlin-u8
+	// Warschauer Straße
+	//   nein http://www.deutschlands-bahnhoefe.de/detail.php?bahnhofNr=6550
+	//        http://jannisr.de/berlin-subway-guide/#s-u-warschauer-str-berlin-u1
+	// Ostkreuz
+	//   CC0  http://www.deutschlands-bahnhoefe.org/node/486
+	// Möckernbrücke
+	//        http://jannisr.de/berlin-subway-guide/#u-mockernbrucke-berlin-u1
+	//        http://jannisr.de/berlin-subway-guide/#u-mockernbrucke-berlin-u7
+	// Fehrbelliner Platz
+	//        http://jannisr.de/berlin-subway-guide/#u-fehrbelliner-platz-berlin-u3
+	//        http://jannisr.de/berlin-subway-guide/#u-fehrbelliner-platz-berlin-u7
+	// Berliner Straße
+	//        http://jannisr.de/berlin-subway-guide/#u-berliner-str-berlin-u7
+	//        http://jannisr.de/berlin-subway-guide/#u-berliner-str-berlin-u9
+	// Bayerischer Platz
+	//        http://jannisr.de/berlin-subway-guide/#u-bayerischer-platz-berlin-u4
+	//        http://jannisr.de/berlin-subway-guide/#u-bayerischer-platz-berlin-u7
+	// Yorckstraße
+	//   nein http://www.deutschlands-bahnhoefe.de/detail.php?bahnhofNr=6967
+	//   nein http://www.deutschlands-bahnhoefe.de/detail.php?bahnhofNr=7755
+	//        http://jannisr.de/berlin-subway-guide/#s-u-yorckstr-berlin-u7
+	// Mehringdamm
+	//        http://jannisr.de/berlin-subway-guide/#u-mehringdamm-berlin-u6
+	//        http://jannisr.de/berlin-subway-guide/#u-mehringdamm-berlin-u7
+	// Hermannplatz
+	//        http://jannisr.de/berlin-subway-guide/#u-hermannplatz-berlin-u7
+	//        http://jannisr.de/berlin-subway-guide/#u-hermannplatz-berlin-u8
+	// Heidelberger Platz
+	//   CC0  http://www.deutschlands-bahnhoefe.org/node/796
+	//        http://jannisr.de/berlin-subway-guide/#s-u-heidelberger-platz-berlin-u3
+	// Neukölln
+	//   nein http://www.deutschlands-bahnhoefe.de/detail.php?bahnhofNr=554
+	//        http://jannisr.de/berlin-subway-guide/#s-u-neukolln-berlin-u7
+	// Bundesplatz
+	//   nein http://www.deutschlands-bahnhoefe.de/detail.php?bahnhofNr=970
+	//        http://jannisr.de/berlin-subway-guide/#s-u-bundesplatz-berlin-u9
+	// Innsbrucker Platz
+	//   CC0  http://www.deutschlands-bahnhoefe.org/node/326
+	//   nein U4
+	// Schöneberg
+	//   CC0  http://www.deutschlands-bahnhoefe.org/node/121
+	// Südkreuz
+	//   CC0  http://www.deutschlands-bahnhoefe.org/node/476
+	// Tempelhof
+	//   nein http://www.deutschlands-bahnhoefe.de/detail.php?bahnhofNr=565
+	//        http://jannisr.de/berlin-subway-guide/#s-u-tempelhof-berlin-u6
+	// Hermannstraße
+	//   nein http://www.deutschlands-bahnhoefe.de/detail.php?bahnhofNr=2716
+	//        http://jannisr.de/berlin-subway-guide/#s-u-hermannstr-berlin-u8
 
 	//------------------------
 };
